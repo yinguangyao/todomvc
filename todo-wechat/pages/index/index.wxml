@@ -1,0 +1,41 @@
+<view class="body">
+    <view class="main">
+        <view class="header">
+            <view class="title">todos</view>
+            <input 
+                type="text" 
+                class="new-todo" 
+                value="{{inputValue}}"
+                placeholder="What needs to be done?" 
+                bindinput="onInput"
+                bindconfirm="createToDo"
+                focus="{{autoFocus}}"
+            />
+        </view>
+        <view class="todos">
+            <label for="toggle-all">
+                <checkbox class="toggle-all" value="on" disabled="false" />
+            </label>
+            <scroll-view 
+              scroll-y
+              style="height: 300px"
+              scroll-into-view="{{activeKey}}"
+            >
+              <block 
+                wx:for="{{todos}}" 
+                wx:for-item="todo" 
+                wx:key="todo-list"
+              >
+                <ToDoItem 
+                    id="{{todo.key}}"
+                    data="{{todo}}" 
+                    bind:deleteToDo="deleteToDo"
+                    index="{{index}}"
+                />
+              </block>
+            </scroll-view>
+        </view>
+    </view>
+    <view class="footer">
+    </view>
+</view>

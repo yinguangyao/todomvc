@@ -1,0 +1,26 @@
+<!--pages/components/ToDoItem/ToDoItem.wxml-->
+<view 
+  class="todo-item" 
+  bindtap="check"
+  data-index="{{index}}"
+>
+    <checkbox 
+      class="toggle" 
+      readonly="" 
+      value="false" 
+      checked="{{data.check}}"
+    />
+    <label 
+      class="label"
+    >{{data.text}}</label>
+    <button 
+        class="destroy" 
+        catchtap="onDelete"
+        data-index="{{index}}"
+    ></button>
+    <input 
+      class="edit" 
+      value="" 
+      style="display: none;" 
+    />
+</view>
