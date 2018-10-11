@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{4:function(e,n,t){e.exports=t(5)},5:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var o=t(1);t(2).render(o.createElement("h1",null,"hello, tsx"),document.getElementById("app"))}},[[4,2,1]]]);

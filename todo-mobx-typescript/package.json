@@ -1,0 +1,42 @@
+{
+  "name": "mobx-typescript-todomvc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yinguangyao/mobx-typescript-todomvc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yinguangyao/mobx-typescript-todomvc/issues"
+  },
+  "homepage": "https://github.com/yinguangyao/mobx-typescript-todomvc#readme",
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "source-map-loader": "^0.2.4",
+    "typescript": "^3.1.2",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "@types/react": "^16.4.16",
+    "@types/react-dom": "^16.0.9",
+    "mobx": "^5.5.0",
+    "mobx-react": "^5.2.8",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  }
+}
